@@ -1,9 +1,9 @@
 # https://youtu.be/BNPW1mYbgS4
 # u-net model 
 
-from keras.models import Model
-from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Conv2DTranspose, BatchNormalization, Dropout, Lambda
-from keras import backend as K
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Conv2DTranspose, BatchNormalization, Dropout, Lambda
+from tensorflow.keras import backend as K
 
 def jacard_coef(y_true, y_pred):
     y_true_f = K.flatten(y_true)
